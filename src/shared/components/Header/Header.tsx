@@ -1,6 +1,8 @@
 import React from "react";
 import "./Header.scss";
 import MenuButton from "./MenuButton/MenuButton";
+import LogoHeader from "./Logo/LogoHeader";
+import IconsGroup from "./IconsGroup/IconsGroup";
 
 const Header = () => {
     const handleMenuClick = () => {
@@ -10,7 +12,8 @@ const Header = () => {
     return (
         <header className="header">
             <MenuButton onMenuClick={handleMenuClick}></MenuButton>
-            <h1>My Header</h1>
+            <LogoHeader></LogoHeader>
+            <IconsGroup></IconsGroup>
         </header>
     );
 };
